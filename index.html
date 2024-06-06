@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculadora - IMC</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <section id="image">
+            <img src="assets/images/undraw_personal_trainer_re_cnua.svg" />
+        </section>
+
+        <section id="calculator">
+            <h1>Calcule o seu IMC</h1>
+            <form class="form">
+
+                <div class="input-container">
+                    <label for="weight">Peso em Kg</label>
+                    <div class="input-field">
+                        <img src="./assets/images/weight.png">
+                        <input type="number" id="weight" step="any" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <label for="height">Altura em m</label>
+                    <div class="input-field">
+                        <img src="./assets/images/ruler.png">
+                        <input type="number" id="height" step="any" required>
+                        <span>m</span>
+                    </div>
+                </div>
+                <button id="calculate">Calcule</button>
+            <div id="result">
+                <span></span>
+            </div>
+            </form>
+
+        </section>
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
