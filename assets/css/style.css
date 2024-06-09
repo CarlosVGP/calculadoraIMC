@@ -104,6 +104,7 @@ body {
 
 #calculate:hover{
     background-color: #c70202;
+    transition: 0.3s;
 }
 
 .good, .bad{
