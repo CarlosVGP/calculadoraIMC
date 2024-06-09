@@ -26,7 +26,6 @@ form.addEventListener('submit', function (e) {
     const msg = `Seu IMC é ${imc} você está ${nivelImc}`;
 
     if(color == 1){
-        color = 0;
         setResultado(msg, true);
     }else{
         setResultado(msg, false);
@@ -69,6 +68,7 @@ function setResultado(msg, isValid) {
     if (isValid) {
             p.classList.remove('bad');
             p.classList.add('good');
+            color = 0;
     } else {
         p.classList.remove("good");
         p.classList.add("bad");
