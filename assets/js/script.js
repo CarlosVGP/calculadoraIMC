@@ -26,6 +26,7 @@ form.addEventListener('submit', function (e) {
     const msg = `Seu IMC é ${imc} você está ${nivelImc}`;
 
     if(color == 1){
+        color = 0;
         setResultado(msg, true);
     }else{
         setResultado(msg, false);
